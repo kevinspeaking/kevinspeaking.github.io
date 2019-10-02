@@ -57,8 +57,12 @@
       background-color: rgba(0, 0, 0, .3);
     }
 
-    #nav-dropdown details summary::-webkit-details-marker {
+    details#nav-dropdown summary::-webkit-details-marker {
       display: none;
+    }
+
+    details#nav-dropdown>summary:first-of-type {
+      list-style-type: none;
     }
 
     .navbar-name {
