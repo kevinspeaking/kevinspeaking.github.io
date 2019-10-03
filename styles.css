@@ -3,7 +3,7 @@ body {
 }
 
 #header-main-div {
-    background-image: url('./book-background.jpg');
+    background-image: url('./images/book-background.jpg');
     background-size: 130% auto;
     background-position: top center;
 }
@@ -53,4 +53,14 @@ details#nav-dropdown>summary:first-of-type {
 
 #audio-cols {
     margin: 0 auto;
+}
+
+#audio-cols svg {
+    max-height: 100px;
+}
+
+#header-audio {
+    background-image: url('./images/condensor-mic.jpg');
+    background-size: 100% auto;
+    background-position: top center;
 }
