@@ -12,6 +12,7 @@
   <title>Kevin Gillispie | Voice Actor</title>
   <meta name="description" content="The internet home of voice actor Kevin Gillispie">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -20,108 +21,43 @@
   <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="https://brave.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-  <style>
-    body {
-      margin: 0;
-    }
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light bg-light" aria-label="site">
+      <a class="navbar-brand" href="/" aria-label="microphone-icon">
+        <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"
+          class="">
+          <path fill="currentColor"
+            d="M336 192h-16c-8.84 0-16 7.16-16 16v48c0 74.8-64.49 134.82-140.79 127.38C96.71 376.89 48 317.11 48 250.3V208c0-8.84-7.16-16-16-16H16c-8.84 0-16 7.16-16 16v40.16c0 89.64 63.97 169.55 152 181.69V464H96c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16h-56v-33.77C285.71 418.47 352 344.9 352 256v-48c0-8.84-7.16-16-16-16zM176 352c53.02 0 96-42.98 96-96h-85.33c-5.89 0-10.67-3.58-10.67-8v-16c0-4.42 4.78-8 10.67-8H272v-32h-85.33c-5.89 0-10.67-3.58-10.67-8v-16c0-4.42 4.78-8 10.67-8H272v-32h-85.33c-5.89 0-10.67-3.58-10.67-8v-16c0-4.42 4.78-8 10.67-8H272c0-53.02-42.98-96-96-96S80 42.98 80 96v160c0 53.02 42.98 96 96 96z"
+            class=""></path>
+        </svg>
+      </a>
 
-    #header-main-div {
-      background-image: url('./book-background.jpg');
-      background-size: 130% auto;
-      background-position: top center;
-    }
+      <section class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home <span class="sr-only">(current page)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dank Memes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <details id="nav-dropdown">
+              <summary class="nav-link dropdown-toggle">Dropdown</summary>
+              <a class="dropdown-item bg-light" href="#">Action</a>
+              <a class="dropdown-item bg-light" href="#">Another action</a>
+              <a class="dropdown-item bg-light" href="#">Something else here</a>
+            </details>
+          </li>
+        </ul>
+        <div class="navbar-name">Dizzy's Dive (nav)Bar</div>
+      </section>
+    </nav>
+  </header>
 
-    .navbar-brand {
-      background-color: rgba(0, 0, 0, .3);
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      text-align: center;
-    }
-
-    .navbar-brand svg {
-      width: 20px;
-      color: white;
-      margin-bottom: -5px;
-      -webkit-filter: drop-shadow(0 2px 1px gray);
-      filter: drop-shadow(0 2px 1px gray);
-    }
-
-    #nav-dropdown {
-      position: absolute;
-      z-index: 9999;
-    }
-
-    .nav-item:hover,
-    #nav-dropdown:hover {
-      background-color: rgba(0, 0, 0, .3);
-    }
-
-    details#nav-dropdown summary::-webkit-details-marker {
-      display: none;
-    }
-
-    details#nav-dropdown>summary:first-of-type {
-      list-style-type: none;
-    }
-
-    .navbar-name {
-      color: #6c757d;
-    }
-
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-    }
-
-    .triple-col {
-      margin: 0 auto;
-    }
-  </style>
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <a class="navbar-brand" href="/">
-      <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"
-        class="">
-        <path fill="currentColor"
-          d="M336 192h-16c-8.84 0-16 7.16-16 16v48c0 74.8-64.49 134.82-140.79 127.38C96.71 376.89 48 317.11 48 250.3V208c0-8.84-7.16-16-16-16H16c-8.84 0-16 7.16-16 16v40.16c0 89.64 63.97 169.55 152 181.69V464H96c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16h-56v-33.77C285.71 418.47 352 344.9 352 256v-48c0-8.84-7.16-16-16-16zM176 352c53.02 0 96-42.98 96-96h-85.33c-5.89 0-10.67-3.58-10.67-8v-16c0-4.42 4.78-8 10.67-8H272v-32h-85.33c-5.89 0-10.67-3.58-10.67-8v-16c0-4.42 4.78-8 10.67-8H272v-32h-85.33c-5.89 0-10.67-3.58-10.67-8v-16c0-4.42 4.78-8 10.67-8H272c0-53.02-42.98-96-96-96S80 42.98 80 96v160c0 53.02 42.98 96 96 96z"
-          class=""></path>
-      </svg>
-    </a>
-
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-        <li class="nav-item dropdown">
-          <details id="nav-dropdown">
-            <summary class="nav-link dropdown-toggle">
-              Dropdown
-            </summary>
-            <a class="dropdown-item bg-light" href="#">Action</a>
-            <a class="dropdown-item bg-light" href="#">Another action</a>
-            <a class="dropdown-item bg-light" href="#">Something else here</a>
-          </details>
-          <!-- <a class="nav-link dropdown-toggle" href="#" id="drop-down" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">Dropdown</a>
-          <div class="dropdown-menu" aria-labelledby="drop-down">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div> -->
-        </li>
-      </ul>
-      <div class="navbar-name">Kevin Gillispie</div>
-    </div>
-  </nav>
-
-  <main>
+  <main id="main" role="main">
     <header>
       <div id="header-main-div" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
         <div class="col-md-5 p-lg-5 mx-auto my-5">
@@ -132,7 +68,7 @@
       </div>
     </header>
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+    <section class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
       <div class="bg-dark w-50 mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
         <div class="my-3 py-3">
           <h2 class="display-5">Another headline</h2>
@@ -147,11 +83,11 @@
         </div>
         <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
       </div>
-    </div>
+    </section>
 
-    <div class="bg-light w-100 p-5">
+    <section class="bg-light w-100 p-5">
       <!-- Three columns of text below the header -->
-      <div class="row text-center w-75 triple-col">
+      <div id="audio-cols" class="row text-center w-75">
         <div class="col-lg-4">
           <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
             class="">
@@ -193,8 +129,10 @@
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
-    </div>
+    </section>
   </main>
+  
+  <footer></footer>
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" async
