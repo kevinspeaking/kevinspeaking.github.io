@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+}
+
+#header-main-div {
+    background-image: url('./book-background.jpg');
+    background-size: 130% auto;
+    background-position: top center;
+}
+
+.navbar-brand {
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.navbar-brand svg {
+    width: 20px;
+    color: white;
+    margin-bottom: -5px;
+    -webkit-filter: drop-shadow(0 2px 1px gray);
+    filter: drop-shadow(0 2px 1px gray);
+}
+
+#nav-dropdown {
+    position: absolute;
+    z-index: 9999;
+}
+
+.nav-item:hover,
+#nav-dropdown:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+details#nav-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+details#nav-dropdown>summary:first-of-type {
+    list-style-type: none;
+}
+
+.navbar-name {
+    color: #6c757d;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+}
+
+#audio-cols {
+    margin: 0 auto;
+}
