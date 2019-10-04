@@ -3,9 +3,10 @@ body {
 }
 
 #header-main-div {
-    background-image: url('./images/book-background.jpg');
+    background-image: url('./images/condensor-mic.jpg');
     background-size: 130% auto;
     background-position: top center;
+    background-repeat: no-repeat;
 }
 
 .navbar-brand {
@@ -60,7 +61,8 @@ details#nav-dropdown>summary:first-of-type {
 }
 
 #header-audio {
-    background-image: url('./images/condensor-mic.jpg');
-    background-size: 100% auto;
+    background-image: url('./images/book-background.jpg');
+    background-size: cover;
     background-position: top center;
+    background-repeat: no-repeat;
 }
