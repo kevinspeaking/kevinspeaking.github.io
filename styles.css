@@ -57,9 +57,30 @@ details#nav-dropdown>summary:first-of-type {
     font-size: 1.125rem;
     text-anchor: middle;
 }
-#equipment {
-    /* background-image: url("/images/kaotica-eyeball-500-80.jpg"); */
+
+#availability .image-container,
+#equipment .image-container {
+    max-width: 460px;
 }
+
+#availability .image-container {
+    background-image: url(../images/white-pencil-black-paper.jpg);
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#work-list-container {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+#types-of-work {
+    list-style: none;
+    color: gray;
+    text-align: left;
+}
+
 #equipment .image-container {
     background-image: url("./images/audio-technica-500-80.jpg");
     background-size: cover;
