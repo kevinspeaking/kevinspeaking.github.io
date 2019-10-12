@@ -24,7 +24,7 @@ body {
 }
 
 .navbar-brand svg {
-    width: 20px;
+    width: 40px;
     color: white;
     margin-bottom: -5px;
     -webkit-filter: drop-shadow(0 2px 1px gray);
@@ -99,6 +99,7 @@ details#nav-dropdown>summary:first-of-type {
 
 #audio-cols {
     margin: 0 auto;
+    padding: 80px 0;
 }
 
 #audio-cols svg {
